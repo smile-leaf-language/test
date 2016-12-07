@@ -31,4 +31,5 @@
 ## 第二个运行中阶段 此过程可多次执行 (属性Props改变 componentWillRecieveProps)->状态State改变 ->shouldComponentUpdate 如果return false 状态不更新也就没改变不进行组件渲染 否则 return true-> componentWillUpdate -> render -> componentDidUpdate   
 ## 第三个卸载阶段  unmount componentWillUnmount （可有两种卸载方法  一种是定义状态destroy：false  操作设为true 返回null 不进行渲染 另一种是调用react的API进行DOM删除  封装remove方法 调用unmountComponentAtNode(element)的API ） ->结束
 
-## React.children:API 提供了五个方法（count、map、forEach、only、toArray）
+# React Router:保持ui和url同步，实现代码延迟加载（只加在某一路由的代码）、路由匹配、位置过度处理。
+## 
